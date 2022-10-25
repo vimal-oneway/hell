@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;1,400&family=Roboto+Condensed:wght@400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #242424;
+    color:#efffef;
+}
+
+
+.roboto{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.headerText{
+    font-size: xx-large;
+}
+
+.subHeaderText{
+    font-size: large;
+}
+
+.about{
+    height: 95vh;
+}
+
+.about-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.about-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.field{
+   padding-top: 12px;
+}
+
+.step-con{
+    width: 100%;
+}
+.step{
+    color: #242424;
+}
+
+.award{
+    border-radius: 12px;
+    background-color: chocolate;
+}
+
+.main-con{
+    width: 100%;
+    padding: 100px 5% 0 5%;
+    min-height: 90vh;
+}
+
+.sub-con{
+    width: 100%;
+    height: 100%;
+}
+
+.cards-con{
+    display: flex;
+    justify-content: center;
+
+}
+
+.flex-con{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.con{
+  margin: 0 1em ; 
+}
+
+.bg{
+    background-color: antiquewhite;
+}
+.h90{
+    height: 90vh;
+}
+
+.lora{
+    font-family: 'Lora', serif;
+}
+
+.mrt5{
+    margin-top: 25px;
+}
+.mrt2{
+    margin-top: 16px;
+}
+
+/* *moblie */
+@media screen  and  (min-width: 320px) and (max-width:600px){
+    .parent > div{
+        width: 12px;
+        height: 12px;
+
+    }
+    .bus{
+        transform: rotate(90deg);
+        width: 150%;
+        height: auto;
+        margin: 50%  0 0 -25%;
+        border: #efffef 2px solid;
+        padding: 12px 12px 12px 12px;
+    }
+
+}
+
+
+/* *table */
+@media screen and (min-width:600px) and (max-width:900px) {
+    .form-con-black{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background-color: #48494a;
+        padding:2rem;
+        border-radius: 12px;
+        color:#efffef;
+    }
+  
+    .fields-con{
+        display: flex;
+        flex-direction: column;
+    }
+    .field-con{
+        margin: 5%;
+    }
+    .flex-lay{
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        flex-direction: column;
+    }
+    .parent > div{
+        width: 12px;
+        height: 12px;
+    }
+    .bus{
+        border: #efffef 2px solid;
+        padding: 12px 12px 12px 12px;
+    }
+}
+
+/* *lap */
+@media screen and (min-width: 900px) {
+
+    .form-con-black{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background-color: #48494a;
+        padding:2rem;
+        border-radius: 12px;
+        color:#efffef;
+    }
+
+    .fields-con{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .field-con{
+        margin: 16px;
+    }
+    .flex-lay{
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        flex-direction: row;
+    }
+    .parent > *,.hh{
+        width: 25px;
+        height: 16px;
+        cursor: pointer;
+    }
+    .bus{
+        border: #efffef 2px solid;
+        padding: 12px 12px 12px 12px;
+    }
+}
+
+
+
+/* !grid */
+.parent {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+}
+    
+.div1 { grid-area: 2 / 5 / 3 / 6; }
+.div2 { grid-area: 2 / 4 / 3 / 5; }
+.div3 { grid-area: 1 / 4 / 2 / 5; }
+.div4 { grid-area: 1 / 5 / 2 / 6; }
+.div5 { grid-area: 2 / 3 / 3 / 4; }
+.div6 { grid-area: 2 / 2 / 3 / 3; }
+.div7 { grid-area: 1 / 2 / 2 / 3; }
+.div8 { grid-area: 1 / 1 / 2 / 2; }
+.div9 { grid-area: 2 / 1 / 3 / 2; }
+.div10 { grid-area: 1 / 3 / 2 / 4; }
+.div11 { grid-area: 1 / 6 / 2 / 7; }
+.div12 { grid-area: 2 / 6 / 3 / 7; }
+.div13 { grid-area: 1 / 7 / 2 / 8; }
+.div14 { grid-area: 2 / 7 / 3 / 8; }
+.div15 { grid-area: 2 / 8 / 3 / 9; }
+.div16 { grid-area: 1 / 8 / 2 / 9; }
+.div17 { grid-area: 1 / 9 / 2 / 10; }
+.div18 { grid-area: 2 / 9 / 3 / 10; }
+.div19 { grid-area: 1 / 10 / 2 / 11; }
+.div20 { grid-area: 2 / 10 / 3 / 11; }
+
+.busSeatBooked{
+    background-color: gray;
+}
+
+.busSeatSelected{
+    background-color: skyblue;
+}
