@@ -12,7 +12,7 @@ export const  ViewBus = (props) => {
  const initialTicketBooked= {
     ticketId: [],
     busId:null,
-    selectedTickets:[]
+    selectedTickets:[] 
   }
 
   const [busData,setBusData] = useState('')
@@ -87,9 +87,10 @@ export const  ViewBus = (props) => {
       }
     }
   }
-
+  var count=0;
   const handleClick = (e) =>{
-    const selectedTickets = ticketBooked.ticketId;
+    // const selectedTickets = ticketBooked.ticketId;
+    var  selectedTickets = [];
     const isPresent = selectedTickets.includes(Number(e.target.id));
     console.log(e.target.id,isPresent);
     if(isPresent)
@@ -99,8 +100,10 @@ export const  ViewBus = (props) => {
     }
     else{
        e.target.className = `${e.target.className} busSeatSelected`.trim()
-       var lastele =  selectedTickets.push(Number(e.target.id));
-       console.log(selectedTickets,lastele);
+      //  var lastele =  selectedTickets.push(Number(e.target.id));
+      selectedTickets[count]=e.target.id;
+      count+=2;
+       console.log(selectedTickets,count);
 
     }
   }
@@ -148,7 +151,7 @@ export const  ViewBus = (props) => {
                         <div  id='33' onClick={(e)=>{handleClick(e)}}  className="div5 bg"> </div>
                         <div  id='32' onClick={(e)=>{handleClick(e)}}  className="div6 bg"> </div>
                         <div  id='22' onClick={(e)=>{handleClick(e)}}  className="div7 bg"> </div>
-                        <div  id='21' onClick={(e)=>{handleClick(e)}}  className="div8 bg"> </div>
+                        <div  id='21' onClick={(e)=>{handleClick(e)}}  className="div8 bg"> </div>                        
                         <div  id='31' onClick={(e)=>{handleClick(e)}}  className="div9 bg"> </div>
                         <div  id='23' onClick={(e)=>{handleClick(e)}}  className="div10 bg"> </div>
                         <div  id='26' onClick={(e)=>{handleClick(e)}}  className="div11 bg"> </div>
